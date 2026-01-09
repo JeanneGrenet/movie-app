@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router";
+import { MoviesPage } from "./pages/Movies";
+
 function App() {
   return (
     <>
-      <h1 className="text-red-600">Hello World</h1>
+      <Routes>
+        <Route path="/" element={<MoviesPage />} />
+      </Routes>
     </>
   );
 }
