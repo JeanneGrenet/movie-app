@@ -86,3 +86,21 @@ export type Credits = {
   cast: Cast[];
   crew: Crew[];
 };
+
+export type Video = {
+  id: string;
+  iso_639_1: string;
+  iso_3166_1: string;
+  key: string;
+  name: string;
+  site: string;
+  size: number;
+  type: string;
+  official: boolean;
+  published_at: string;
+};
+
+export type VideosResponse = {
+  id: number;
+  results: Video[];
+};
